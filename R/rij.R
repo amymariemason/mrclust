@@ -36,3 +36,6 @@ rij <- function(i, j, pi_clust, theta, theta_sd, theta_clust, junk_mixture,
   res <- num / den
   return(res)
 }
+
+#POTENTIAL ISSUE: j used both as an input and re-defined inside the function
+# if j was set to something other than 1:n, this could throw an error (e.g. if j had 0 length)
